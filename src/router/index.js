@@ -21,4 +21,4 @@ const router = createRouter({
 });
 
 export default router;
-console.log("hello wolrd");
+console.log("hellodd wolrd");
