@@ -1,23 +1,16 @@
-name: Hello World Workflow
+name: Comment on Pull Request
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types: [opened, synchronize]
 
 jobs:
-  hello-world-job:
+  comment:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Print Hello, World!
-        run: echo "Hello, World!"
-
-      - name: list all the files in repo
-        run: ls
 
       - name: Add a comment to the pull request
         uses: peter-evans/create-or-update-comment@v1
