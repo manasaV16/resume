@@ -1,0 +1,5 @@
+name: Manu-Deni-Action
+description: This.action.greets.person
+runs:
+..using:node16
+..main:src/index.js
